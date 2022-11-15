@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+#section-présentation {
+    background: #EF7E7E;
+}
+
+/*présentation*/
+#presentation {
+    /*border: 5px solid green;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.text {
+    /*border: solid 5px cyan;*/
+    width: 435px;
+    height: 355px;
+    margin-bottom: 54px;
+    margin-top: 27px;
+    text-align: center;
+}
+.background p {
+    padding: 3px;
+}
+/*les images en bacground*/
+#japon {
+    background-image: url(../media/img/img-jo/jap-sushi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#france {
+    background-image: url(../media/img/img-jo/fr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#salvador {
+    background-image: url(../media/img/img-jo/salvador1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#polynésie {
+    background-image: url(../media/img/img-jo/polynésie1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#grèce {
+    background-image: url(../media/img/img-jo/parthénon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*un voile noir pour voir le texte correctement sur l'image*/
+.background {
+    background: #00000054;
+    color: white;
+    flex-direction: column;
+    height: 100%;
+}

@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* partie header */
+header {
+    height: 35vh;
+    background-image: url("../media/img/salvador.jpg");
+}
+h1 {
+    padding-top: 3%;
+    text-align: center;
+    font-size: 60px;
+    color: #D2574B;
+    font-family: 'Asap', sans-serif;
+}
+header nav {
+    margin-top: 13vh;
+    padding: 1.5%;
+    text-align: center;
+    background-color: #D2574B;
+}
+header nav a {
+    padding: 1.5%;
+    font-size: 20px;
+    color: white;
+    border-right: 1px solid white;
+    text-decoration: none;
+    font-family: 'Asap', sans-serif;
+}
+.firstA {
+    border-left: 1px solid white;
+}
+header nav a:hover {
+    background-color: white;
+    color: #D2574B;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+
+}
+/* partie main */
+main{
+    margin-top: 1%;
+}
+
+main h1 {
+    height: 30vh;
+    line-height: 15vh;
+    font-size: 35px;
+    text-decoration: underline;
+    color: black;
+    font-family: 'Asap', sans-serif;
+    background-color: #f7f7f7;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 2% 0;
+}
+
+.card img {
+    width: 30%;
+}
+.card div {
+    width: 70%;
+    padding-left: 2%;
+}
+.h2 {
+    margin-bottom: 3%;
+    font-size: 20px;
+    text-align: center;
+}
+.cardp {
+    text-align: justify;
+}
+.h2 {
+    color: #1D0D0F;
+}
+.cardp{
+    color: #878787;
+}
+.h2, .cardp {
+    font-family: 'Asap', sans-serif;
+    line-height: 3vh;
+}
+.cardA{
+    display: block;
+    width: 20%;
+    margin: 3% auto;
+    padding: 1%;
+    text-align: center;
+    background-color: #331417;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+.bigCard {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+
+    
+} 
+.bigCard section {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    width: 50%;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+
+ }
+ .bigCard section:first-child {
+    border-right: 1px solid lightgray;
+    padding-right: 8%;
+ }
+ .bigCard section:nth-child(2) {
+    border-left: 1px solid lightgray;
+    padding-left: 8%;
+ }
+.bigCard section img{
+    width: 100%;
+    margin-bottom: 3%;
+}
+.cardASmall{
+    width: 27%;
+}
+
+
+/* partie footer */
+footer{
+    background-color: black;
+    color: white;
+   
+   
+}
+.footer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 2%;
+    width: 100%;
+}
+.description,.contactes{
+    width: 33%; 
+}
+.newlester{
+    padding: 2%;
+    border: solid red 2px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 5% auto 0;
+    background-color: #D2574B;
+    width: 50%;
+    text-align: center;
+    font-family: arial;
+    font-size: 15px;
+}
+
+.pcontacte{
+margin-top: 7%;
+}
+.droit{
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+  
+

@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*-----------scrollbar----------------*/
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background: rgb(10, 10, 10);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #FFA4C9;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(6, 6, 6);  /* creates padding around scroll thumb */
+  }
+
+/*****************header*************************************/
+.hero {
+    background-image: url("../media/img/img-japon/japan_header_bg.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* top: 0; */
+    height: 100vh;
+    padding: 1px;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    text-shadow: 1px 1px 15px purple;
+}
+
+.header-container {
+    height: 70px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 72%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 1px;
+    box-shadow: 0px 0px 6px 1px;
+}
+
+.logo {
+    width: 176px;
+    padding-top: 5px;
+}
+
+nav {
+    width: 500px;
+    /*background-color: rgba(255, 0, 0, 0.44);*/
+}
+
+header li a {
+    color: navy;
+}
+/****************menu déroulant**************************/
+
+.sous-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /*display: none;*/
+    /*opacity: 0;*/
+    display: none;
+    width: 135px;
+}
+
+.navbar a {
+    padding: 29px 34px;
+    /*border-left: 1px solid #ccc9c9;*/
+    text-decoration: none;
+    /*color: white;*/
+    display: block;
+}
+
+.navbar li {
+    height: auto;
+    width: 135.8px;
+    float: left;
+    text-align: center;
+    list-style: none;
+    font: normal bold 13px/1em Arial, Verdana, Helvetica;
+    padding: 0;
+    margin: 0;
+    /*background-color: #444444;*/
+  }
+
+.navbar li:hover ul {
+    /*opacity: 1;*/
+    display: block;
+    background-color: rgba(255, 255, 255, 72%);
+    /*margin-top: 11px;*/
+    pointer-events: all;
+    box-shadow: 2px 3px 5px 0px;
+    display: flex;
+    transition: all .5s ease-out;
+}
+
+.navbar li:hover > a {
+    background-color: #ffa4c9a3;
+}
+
+
+.sous-menu li:hover a {
+    background-color: #ffa4c9a3;
+}
+
+/*.navbar .sous-menu {
+    pointer-events: none;
+    /*transform: translateX(10%);
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+/*
+.navbar li:hover .sous-menu {
+    /*transform: translateX(0);*/
+    /*pointer-events: all;*
+    transition: all .5s ease-out;
+    opacity: 1;
+}
+*/
+/***************fin du menu déroulant *****************/
+header ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.intro-box {
+    margin: auto;
+    width: 38%;
+    background-color: #ffffff80;
+    margin-top: 15%;
+    padding: 45px;
+    font-size: 32px;
+    text-shadow: 1px 1px red;
+}
+/*************************end header***********************/
+
+/**************************section intro japan****************/
+
+.japan-intro-section {
+    width: 100%;
+    background-color: #ffa4c9;
+    color: white;
+    text-shadow: red 2px 2px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.intro-japan {
+    width: 50%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.intro-japan p {
+    text-align: left;
+    padding-top: 38px;
+    font-size: 20px;
+}
+
+/*******************section avec contenu***********************/
+
+.osaka {
+    background-image: url("../media/img/img-japon/background-osaka.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    padding-bottom: 30px; 
+}
+
+/*h2 {
+    text-align: center;
+    padding-top: 47px;
+    padding-bottom: 47px;
+    background-color: #ffffffb8;
+}*/
+
+.container-visit {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 45px;padding-bottom: 20px;
+}
+
+.container-visit img {
+    width: 35%;
+}
+
+.detail-box {
+    width: 40%;
+    font-size: 21px;
+    background-color: #ffffffb8;
+    border-radius: 6px;
+    padding: 23px;
+    
+}
+
+.titre-villes {
+    margin: auto;
+    width: 8%;
+    background-color: #ffffffb8;
+    padding: 20px;    
+    text-align: center;
+}
+
+.nara {
+    background-image: url("../media/img/img-japon/background-nara.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    padding-bottom: 30px; 
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+
+.kyoto {
+    background-image: url("../media/img/img-japon/background-kyoto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    padding-bottom: 30px;
+    padding-bottom: 30px; 
+}
+
+.tokyo {
+    background-image: url("../media/img/img-japon/background-tokyo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    padding-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.mont-fuji {
+    background-image: url("../media/img/img-japon/background-mont_fuji.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    padding-bottom: 30px;
+    padding-bottom: 30px
+}
+
+.itsukushima {
+    background-image: url("../media/img/img-japon/background-itsukushima.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    padding-bottom: 30px;
+    padding-bottom: 30px
+}
+
+.shirakawago {
+    background-image: url("../media/img/img-japon/background-shirakawago.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    padding-bottom: 30px;
+    padding-bottom: 30px
+}
+
+.nikko {
+    background-image: url("../media/img/img-japon/background-nikko.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    padding-bottom: 30px;
+    padding-bottom: 30px
+}
+
+.hiroshima {
+    background-image: url("../media/img/img-japon/background-hiroshima.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    padding-bottom: 30px;
+    padding-bottom: 30px
+}
+
+.okinawa {
+    background-image: url("../media/img/img-japon/background-okinawa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    padding-bottom: 30px;
+    padding-bottom: 30px
+}
+
+.nagoya {
+    background-image: url("../media/img/img-japon/background-nagoya.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    padding-bottom: 30px;
+    padding-bottom: 30px
+}
+
+
+.titre-large {
+    width: 25%;
+}
+
+/********************section gastronomie***************************/
+
+.gastronomie {
+    height: 100%;
+    background-color: #ffa4c9;
+    color: #f7f7f7;
+    text-shadow: red 1px 1px;
+}
+
+.gastronomie h2 {
+    padding-top: 53px;
+    padding-bottom: 23px;
+    text-align: center;
+}
+
+.intro-gastronomie {
+    width: 40%;
+    margin: auto;
+    font-size: 22px;
+    padding-bottom: 35px;
+}
+
+.container-gastronomie {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-plat {
+    width: 690px;
+    display: flex;
+    justify-content: space-around;
+    margin: 21px;
+    align-items: center;
+}
+
+.container-plat img {
+    width: 200px;
+    height: 200px;
+}
+.detail-plat {
+    width: 368px;
+}
+/**********************fin section gastronomie*******************/
+/************************section Slide****************************/
+
+
+.section-slide {
+    background-color: #ffa4c9;
+    padding-top: 1px;
+    color: white;
+}
+
+.section-slide p {
+    font-size: 94px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: red 6px 3px;
+    padding-bottom: 50px;
+}
+
+img {
+    max-width:100%;
+    display:block
+}
+
+	
+.slideshow {
+
+    margin:5rem auto;
+    max-width: 600px;
+    aspect-ratio:3/2;
+    border: 5px solid hsl(306deg 100% 56% / 34%);
+    box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.29);
+    overflow: hidden;
+    position: relative
+
+}
+    
+    
+.slideshow img{
+
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    -webkit-mask-image: linear-gradient(to right,red,red);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: linear-gradient(to right,red,red);
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+    animation: slideshow 25s linear infinite
+
+}
+
+
+.slideshow img:nth-child(2){
+	
+	animation-delay: 5s
+		
+}
+	
+.slideshow img:nth-child(3){
+	
+	animation-delay: 10s
+		
+}
+	
+.slideshow img:nth-child(4){
+	
+	animation-delay: 15s
+		
+}
+	
+.slideshow img:nth-child(5){
+	
+	animation-delay: 20s
+	
+}
+    
+@keyframes slideshow {
+
+0%,100% {
+
+opacity: 0
+
+}
+
+10% {
+
+opacity: 1
+
+}
+
+20% {
+
+opacity: 1;
+-webkit-mask-position: 200% 0%;
+-webkit-mask-size: 100% 100%;
+mask-position: 200% 0%;
+mask-size: 100% 100%
+
+} 
+
+25% {
+opacity: 0;
+-webkit-mask-size: 0% 100%;
+mask-size: 0% 100%
+
+}
+
+	}	
+
+/********************footer**************************/
+
+
+footer {
+    background-color: #26272b;
+    width: 100%;
+    color: #737373;
+}
+
+.container-footer {
+    min-width: 80%;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    padding: 35px;
+    border-bottom: 1px solid;
+}
+
+.box-logo {
+    width: 190px;
+    height: 130px;
+    margin: auto;
+}
+
+.about-us {
+    width: 325px;
+    text-align: center;
+}
+
+.box-continent ul, .box-wanderers ul {
+    list-style-type: none;
+}
+
+.box-continent a , .box-wanderers a{
+    text-decoration: none;
+    color: #737373;
+}
+
+.box-continent , .box-wanderers , .footer-right {
+    padding-top: 20px;
+}
+
+footer h3 {
+    padding-bottom: 12px;
+    color: white;
+}
+
+footer li {
+    padding-bottom: 10px;
+}
+
+/* -----------formulaire contact----------*/
+
+
+footer form{
+	display: inline-block;
+}
+
+footer form input,
+footer form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 255px;
+	padding: 18px;
+}
+
+footer ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+footer ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+footer :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+footer form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+footer form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+footer form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+
+/*----------------mention legal ------------------*/
+.not-copyright {
+    width: 80%;
+    height: 40px;
+    text-align: center;
+    margin: auto;
+    padding: 9px;
+}

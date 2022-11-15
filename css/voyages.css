@@ -1,0 +1,453 @@
+/* ---------- GENERAL ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: Montserrat, sans-serif;
+}
+
+.centrage {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ------------ HEADER -------------- */
+
+
+header {
+    height: 90px;
+    width: 100%;
+    background-color: #E75454;
+    display: flex;
+}
+
+/* Pour centrer l'icône et la nav */
+header .centrage {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* L'image ne dépassera pas du header */
+#header-logo {
+    max-height: 100%;
+}
+
+header nav {
+    display: flex;
+}
+
+/* Liste contenant les liens de la nav */
+header nav > ul {
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+}
+
+/* Ajustement de la hauteur des li pour ajuster celles des liens a */
+header nav > ul > li {
+    height: 100%;
+}
+
+/* Disposition et style des liens principaux */
+header nav > ul > li > a {
+    height: 100%;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    justify-content: center;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Styles et paddings des liens - ajouter text shadow ? */
+header nav li a {
+    background-color: #E75454;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 22px 16px;
+}
+
+header nav li a:hover {
+    background-color: #ddd;
+    color: #E75454;
+}
+
+/* Flèche vers le bas pour les menus déroulants */
+.menu-deroulant > a::after {
+    background-image: url('../media/img/white_arrow.svg');
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    content: "";
+    margin-top: 4px;
+}
+
+.menu-deroulant > a:hover::after {
+    background-image: url('../media/img/red_arrow.svg');
+}
+
+/* Dispositions des sous-menus et de leurs contenus */
+header nav ul.sous-menu {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+header nav .sous-menu a {
+    font-weight: 600;
+    border-bottom: 2px solid #E75454;
+} 
+
+/* Transition pour faire apparaître le menu caché */
+.menu-deroulant .sous-menu {
+    pointer-events: none;
+    transform: translateX(10%);
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+
+.menu-deroulant:hover .sous-menu {
+    transform: translateX(0);
+    pointer-events: all;
+    opacity: 1;
+}
+
+
+/* Style liens additionnel */
+
+.btn-transition {
+    background: #E75454;
+    color: #ddd;
+    line-height: 42px;
+    /* padding: 0; */
+    border: none;
+}
+
+ .btn-transition span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-transition:before,
+.btn-transition:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 2px;
+    background: #E75454;
+}
+
+.btn-transition:before {
+    right: 0;
+    top: 0;
+    transition: all 500ms ease;
+}
+
+.btn-transition:after {
+    left: 0;
+    bottom: 0;
+    transition: all 500ms ease;
+}
+
+.btn-transition:hover {
+    color: #E75454;
+    background: transparent;
+}
+
+.btn-transition:hover:before {
+    transition: all 500ms ease;
+    height: 100%;
+}
+
+.btn-transition:hover:after {
+    transition: all 500ms ease;
+    height: 100%;
+}
+
+.btn-transition span:before,
+.btn-transition span:after {
+    position: absolute;
+    content: "";
+    background: #E75454;
+}
+
+.btn-transition span:before {
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 2px;
+    transition: all 500ms ease;
+}
+
+.btn-transition span:after {
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    transition: all 500ms ease;
+}
+
+.btn-transition span:hover:before {
+    width: 100%;
+}
+
+.btn-transition span:hover:after {
+    width: 100%;
+}
+
+/* Bouton Contact */
+
+.btn-contact {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #FFFFFFA2;
+	border-radius: 4px;
+	cursor: pointer;
+    color: #ddd;
+    height: fit-content;
+    align-self: center;
+    font-weight: 600;
+    margin-left: 5em;
+}
+
+.btn-contact svg {
+    height: 55px;
+    width: 150px;
+    fill: none;
+    stroke-width: 5;
+}
+
+.btn-contact svg .remplissage {
+    stroke: rgba(#E75454, 0.7);
+    fill: #E75454;
+    transition: all 1s ease-in-out;
+}
+
+.btn-contact svg .ligne-animee {
+    stroke: white;
+    stroke-dasharray: 20 420;
+    stroke-dashoffset: 20;
+    transition: all 1s ease-in-out;
+}
+
+.btn-contact:hover svg .remplissage {
+    fill: rgba(0, 0, 0, 0.3);
+}
+
+.btn-contact:hover svg .ligne-animee {
+    stroke-dashoffset: -420;
+}
+
+.btn-contact span {
+    position: absolute;
+    margin: auto 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/*-----------------Section Slides---------------------*/
+
+.section-slides {
+    /*border-style: solid;*/
+    background-color: #EA8585;
+    padding: 20px;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box
+}
+
+img {
+    max-width:100%;
+    display:block
+}
+
+input[type="radio"] {
+    position:absolute;
+    left:-100vw
+}
+
+label {
+    cursor:pointer
+}
+
+
+.slideshow {
+
+    display: grid;
+    grid-template: "slider" 1fr;
+    place-items: center;
+    overflow: hidden;
+    max-width: 800px;
+    aspect-ratio:3/2;
+    margin:2rem auto;
+	
+}
+  
+	
+.slideshow> * {
+	
+grid-area: slider;
+
+}	
+
+	
+.slideshow  ul { 
+    display: flex;
+}
+    
+.slideshow  ul  li{
+    min-width: 100%;
+    transition: transform .25s;	
+}
+	
+.slideshow  ul  li	img {	
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+ 
+
+    
+    
+#slide_img1:checked ~  ul > li{transform:translatex(0%)}  
+#slide_img2:checked ~  ul > li{transform: translatex(-100%)}  
+#slide_img3:checked ~  ul > li{transform: translatex(-200%)}
+#slide_img4:checked ~  ul > li {transform: translatex(-300%)}
+#slide_img5:checked ~  ul > li {transform: translatex(-400%)}
+
+ 
+    
+/******************fleches**************************/
+    
+	
+.precedent {	
+    z-index:1;
+    place-self: center left;	
+    cursor: default;
+}
+
+.suivant {	
+    z-index:1;
+    place-self: center right;
+}
+	
+
+.slideshow > .precedent > label,
+.slideshow > .suivant > label {
+    display: none;
+    background-color:hsl(0,0%,15%);
+    justify-content: center;
+    align-content: center
+	
+}   
+        
+.slideshow > .precedent > label:after {
+    content:'←'
+}
+
+.slideshow > .suivant > label:after{
+    content:'→'
+}
+    
+.slideshow > .precedent > label:after,
+.slideshow > .suivant > label:after {	
+    display: flex;
+    align-items: center;
+    font-size:2rem;
+    font-size:clamp(1rem, 2vw, 2rem);
+    color:hsl(0, 0%, 100%);	
+}   
+    
+
+#slide_img1:checked ~ .precedent > label.img4,
+#slide_img1:checked ~ .suivant > label.img2,
+#slide_img2:checked ~ .precedent > label.img1,
+#slide_img2:checked ~ .suivant > label.img3,
+#slide_img3:checked ~ .precedent > label.img2,
+#slide_img3:checked ~ .suivant > label.img4,
+#slide_img4:checked ~ .precedent > label.img3,
+#slide_img4:checked ~ .suivant > label.img5,
+#slide_img5:checked ~ .precedent > label.img4,
+#slide_img5:checked ~ .suivant > label.img1 {
+	display:flex;
+    width:2rem;
+    height:2rem;
+    width:clamp(2rem, 8vw, 4rem);
+    height:clamp(2rem, 8vw, 4rem);
+    cursor: default;
+}
+
+
+
+/***************************navigation puces bas********************************/
+.puces {
+    z-index: 1;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    place-self: end center;
+}
+    
+.puces label {	
+    background-color: white;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+}
+/********************simulation lien actif sur les puces******************************/
+
+	
+#slide_img1:checked ~ .puces > label.img1> .actif_puces,
+#slide_img2:checked ~ .puces > label.img2 > .actif_puces,
+#slide_img3:checked ~ .puces > label.img3 > .actif_puces,
+#slide_img4:checked ~ .puces > label.img4 > .actif_puces,
+#slide_img5:checked ~ .puces > label.img5 > .actif_puces {	
+    border-radius: inherit;	
+    display: flex;
+    height: inherit;
+    width: inherit;
+    background-color: black;
+}
+
+/********************************navigation puces bas****************************/
+/* partie carte du monde */
+.cartedumonde{
+   width: 80%;
+   height: auto;
+   
+}
+.partie{
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+.divdrapeaux {
+    display: flex;
+    justify-content: space-around;
+}
+.divdrapeaux a {
+    width: 15%;
+}
+
+.divdrapeaux a img {
+    width: 100%;
+}
+
+
+
+

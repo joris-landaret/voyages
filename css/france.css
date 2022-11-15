@@ -1,0 +1,254 @@
+/* Style de header adapté pour la page France */
+
+header,
+header nav li a,
+.btn-transition,
+.btn-transition:before,
+.btn-transition:after,
+.btn-transition span:before,
+.btn-transition span:after {
+    background-color: #002654;
+}
+
+header nav li a:hover {
+    color: #002654;
+}
+
+.btn-transition:hover {
+    color: #002654;
+    background-color: #dddddd8c;
+}
+
+.btn-contact svg .remplissage {
+    stroke: rgba(#002654, 0.7);
+    fill: #002654;
+}
+
+header nav .sous-menu a {
+    border-bottom: 2px solid #002654;
+} 
+
+.menu-deroulant > a:hover::after {
+    background-image: url('../media/img/blue_arrow.svg');
+}
+
+
+/* ------------ M A I N -------------- */
+
+
+/* -------- HERO --------- */
+
+#france-hero {
+    height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/img/bg-paris.jpg);
+    color: #ddd;
+    cursor: default;
+}
+
+#france-hero .centrage {
+    width: 60%;
+}
+
+#france-hero h1 {
+    font-size: 65px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+#france-hero p {
+    font-size: 25px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+/* -------- SPECIALITES FRANÇAISES -------- */
+
+#specialites-fr h2, #specialites-fr .specialite {
+    height: 50vh;
+    display: flex;
+}
+
+#specialites-fr h2 {
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.5)), url(../media/img/fr/eiffel-tower-g75a90f32d_1920.jpg);
+    font-size: 42px;
+    color: #eee;
+    text-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+    border-top: 3px solid #ccc;
+}
+
+
+
+#specialites-fr .specialite .centrage {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #eee;
+}
+
+#specialites-fr .specialite {
+    background-color: #002654;
+    background-image: linear-gradient(#002654, #fff);
+}
+
+#specialites-fr .specialite:nth-child(even) .centrage {
+    flex-direction: row-reverse;
+    /* text-align: right; */
+    /* background-color: #CD1125; */
+    /* background-color: lime; */
+}
+
+#specialites-fr .specialite:nth-child(odd) {
+    background-color: #CD1125;
+    background-image: linear-gradient(#fff, #CD1125);
+    border-bottom: 3px solid #ccc;
+}
+
+#specialites-fr .specialite .contenu-img {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+#specialites-fr .specialite .contenu-img img {
+    width: 100%;
+    max-height: 100%;
+}
+
+#specialites-fr .specialite .contenu-txt {
+    width: 45%;
+}
+
+
+
+
+/* ---------- FOOTER ----------- */
+
+footer {
+    background-color: #26272b;
+    width: 100%;
+    color: #737373;
+    cursor: default;
+}
+
+.container-footer {
+    min-width: 80%;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    padding: 35px;
+    border-bottom: 1px solid;
+}
+
+.box-logo {
+    width: 190px;
+    height: 130px;
+    margin: auto;
+}
+
+.about-us {
+    width: 325px;
+    text-align: center;
+}
+
+.box-continent ul, .box-wanderers ul {
+    list-style-type: none;
+}
+
+.box-continent a , .box-wanderers a{
+    text-decoration: none;
+    color: #737373;
+}
+
+.box-continent a:hover, .box-wanderers a:hover {
+    text-decoration: underline;
+}
+
+.box-continent , .box-wanderers , .footer-right {
+    padding-top: 20px;
+}
+
+footer h3 {
+    padding-bottom: 12px;
+    color: white;
+}
+
+footer li {
+    padding-bottom: 10px;
+}
+
+/* -----------formulaire contact----------*/
+
+
+footer form{
+	display: inline-block;
+}
+
+footer form input,
+footer form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 255px;
+	padding: 18px;
+}
+
+footer ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+footer ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+footer :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+footer form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+footer form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+footer form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+
+/*----------------mention legal ------------------*/
+.not-copyright {
+    width: 80%;
+    height: 40px;
+    text-align: center;
+    margin: auto;
+    padding: 9px;
+}

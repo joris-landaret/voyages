@@ -1,0 +1,241 @@
+@font-face {
+    font-family: "Uncial Antiqua";
+    src: url("../fonts/UncialAntiqua-Regular.ttf");
+}
+@font-face {
+    font-family: "Dyonisius";
+    src: url("../fonts/Dyonisius.ttf");
+}
+
+/*header*/
+header nav li a:hover {
+    background-color: white;
+}
+
+header,
+header nav li a,
+.btn-transition,
+.btn-transition:before,
+.btn-transition:after,
+.btn-transition span:before,
+.btn-transition span:after {
+    background-color: #06A3E6;
+}
+
+
+header nav li a:hover {
+    color: #06A3E6;
+}
+
+.btn-transition:hover {
+    color: #06A3E6;
+    background-color: white;
+}
+
+.btn-contact svg .remplissage {
+    stroke: rgba(#06A3E6, 0.7);
+    fill: #06A3E6;
+}
+
+header nav .sous-menu a {
+    border-bottom: 2px solid #06A3E6;
+} 
+
+.menu-deroulant > a:hover::after {
+    background-image: url('../media/img/img-jo/grèce.svg');
+}
+
+/*section1*/
+body {
+    margin: 0;
+}
+section {
+    width: 100%
+}
+header nav ul * {
+    z-index: 1000;
+}
+
+#fix {
+    position: fixed;
+    display: flex;
+    background-color: #06A3E6A3;
+    width: 100%;
+    
+}
+section ul li {
+    display: flex;
+    align-items: flex-start;
+    background-color: #ffffff7d;
+    text-align: center;
+    align-items: center;
+    padding-top: 9px;
+    border-radius: 30px;
+}
+section ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+#fixh1 {
+    width: 20%;
+}
+h1 { 
+    font-family: "Dyonisius";
+    display: flex;
+    justify-content: center;
+    /*border: solid 5px maroon;*/
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+    
+}
+h2 {
+    font-family: "Uncial Antiqua";
+    font-style: italic;
+    /*border: blueviolet solid 5px;*/
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;  
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+section img {
+    width: 100%;
+    height: 677px;
+   
+}
+section a {
+    color: black;
+    text-decoration: none;
+    width: 200px;
+    height: 30px;
+}
+#img {
+    margin: 0;
+    
+}
+p {
+    /*border: cyan solid 5px;*/
+    /*color: white;*/
+    font-size: large;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*histoire + culinaire*/
+.grec {
+    /*border: black solid 5px;*/
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    background-color: white;
+    height: 520px;
+    
+    
+}
+.grec1 {
+    /*border: solid 5px yellow;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #06A3E6;
+    box-shadow: 0px -20px 20px 45px #06A3E6;
+}
+.hist {
+    /*border: black solid 5px;*/
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 55px;
+    background-color: #06A3E6;
+    color: white;
+}
+#plat-cuisiné {
+    background-image: url(../media/img/img-jo/moussaka-grece..jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#entré {
+    background-image: url(../media/img/img-jo/grece-salade.1550284.w630.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cuisine {
+    /*border: black solid 5px;*/
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    background-color: white;
+    justify-content: center;
+}
+.bloc-opac {
+    background-color: #ffffff7d;
+    font-size: large;
+    margin-bottom: 20px;
+}
+#viande {
+    background-image: url(../media/img/img-jo/Souvlaki_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#poisson {
+    background-image: url(../media/img/img-jo/xifias1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#vege {
+    background-image: url(../media/img/img-jo/yémista.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#patisserie {
+    background-image: url(../media/img/img-jo/bouk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#boisson {
+    background-image: url(../media/img/img-jo/retsina1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#remarque {
+    background-image: url(../media/img/img-jo/cafeturc1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Les Ies*/
+#iles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.iles {
+    width: 30%;
+    height: 500px;
+    background-color: #06A3E6;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.img {
+    height: 300px;
+}
+.h1 {
+    justify-content: center;
+    margin-top: 13px;
+}
